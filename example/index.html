@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>NumAnimate</title>
+
+<!-- jQuery, required for numanimate -->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+<!-- jQuery UI, optional, needed for different types of easing -->
+<script type="text/javascript" src="jquery-ui-1.10.2.custom.min.js"></script>
+
+<!-- jQuery numanimate plugin -->
+<script type="text/javascript" src="../jquery.numanimate.0.0.1/jquery.numanimate.0.0.1.js"></script>
+
+<script type="text/javascript">
+
+	$(function() {
+		
+		//button to trigger all the animation
+		$("#buttonElement").on("click", function(){
+			start();
+		});	
+		
+	});	
+	
+	/**
+	 * start the animation
+	 * @param none
+	 */
+	function start() 
+	{
+		$("#element1").numanimate({from: 0, to: 100, time: 3000});
+		
+		$("#element2").numanimate({from: 0, to: 100, time: 3000, isCurrency: true});
+		
+		$("#element3").numanimate({from: 10.5, to: 50.3, decimals: 3, time: 2500, easing: "easeOutBounce"});
+		
+		$("#element4").numanimate({to: "$150.32"});
+		
+		var formatter = function(value) {
+			return Math.round(value);
+		};
+		$("#element5").numanimate({from: 0, to: 300, format: formatter});
+	}
+
+</script>	
+	
+</head>
+<body>
+	
+	<div id="element1">0</div>
+	<br/>
+	
+	<div id="element2">0</div>
+	<br/>
+	
+	<input id="element3" type="text" value="0"/>
+	<br/><br/>
+	
+	<textarea id="element4" style="width: 200px; height: 100px;" 
+		placeholder="Type a value here and see how it animates"></textarea>
+	<br/><br/>
+	
+	<select>
+		<option id="element5">0</option>
+	</select>
+	<br/><br/>
+	
+	<button id="buttonElement">Animate!</button>
+	
+</body>
+</html> 

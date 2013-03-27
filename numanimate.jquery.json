@@ -1,0 +1,32 @@
+{
+  "name": "numanimate",
+  "title": "jQuery NumAnimate",
+  "description": "A jQuery plugin that extends from the jQuery animate method to gradually tween from one numeric value to another and display it in a DOM element.",
+  "keywords": ["animate", "number", "tween", "numeric", "flip", "animation"],
+  "version": "1.0.0",
+  "author": {
+    "name": "Paul Yuan",
+    "url": "http://paulyuan.ca"
+  },
+  "maintainers": [
+    {
+      "name": "Paul Yuan",
+      "email": "pyuana@gmail.com",
+      "url": "https://twitter.com/pyuan"
+    }
+  ],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://opensource.org/licenses/MIT"
+    }
+  ],
+  "bugs": "https://github.com/pyuan/numanimate/issues",
+  "homepage": "https://github.com/pyuan/numanimate",
+  "docs": "https://github.com/pyuan/numanimate",
+  "download": "https://github.com/pyuan/numanimate",
+  "demo": "https://github.com/pyuan/numanimate",
+  "dependencies": {
+    "jquery": ">=1.5"
+  }
+}
