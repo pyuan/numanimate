@@ -8,8 +8,8 @@
 	$.fn.numanimate = function(options) 
 	{
 		var opts = $.extend({}, $.fn.numanimate.options, options);
-		var isCurrencySet = options.isCurrency != null;
-		var isFromSet = options.from != null;
+		var isCurrencySet = options && options.isCurrency != null;
+		var isFromSet = options && options.from != null;
 		
 		return this.each(function() {
 			opts.element = $(this);
