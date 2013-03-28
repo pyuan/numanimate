@@ -36,7 +36,7 @@ The following would perform a tween from 0 to 100 over 1 second and display the 
 > Sorry, the $ currency format is just the easiest and the most familiar one (for me) to support. But have no fear, you can use the fomat option to create your own function to format the values any way you would like. 
 
 **Can I animate values in any HTML element?**
-> I hope so, right now, it should work for all the common form elements such as a &lt;input&gt;, <textarea>, or <button> as well as any regular HTML elements such as a <div> or <p> etc. Check out the [example](http://paulyuan.ca/numanimate) to see how it works. If there is an element that is not working right, feel free to drop me a line.
+> I hope so, right now, it should work for all the common form elements such as a &lt;input/&gt;, &lt;textarea/&gt, or &lt;button/&gt as well as any other regular HTML elements such as a &lt;div/&gt or &lt;p/&gt etc. Check out the [example](http://paulyuan.ca/numanimate) to see how it works. If there is an element that is not working right, feel free to drop me a line.
 
 
 [![githalytics.com alpha](https://cruel-carlota.pagodabox.com/6833a9f632a914b4a2d4833964f3984b "githalytics.com")](http://githalytics.com/pyuan/numanimate)
