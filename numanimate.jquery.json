@@ -3,7 +3,7 @@
   "title": "jQuery NumAnimate",
   "description": "A jQuery plugin that gradually tweens one numeric value to another and displays it in the specified DOM element.",
   "keywords": ["animate", "number", "tween", "numeric", "flip", "animation", "scroll"],
-  "version": "1.1.1",
+  "version": "1.1.2",
   "author": {
     "name": "Paul Yuan",
     "url": "http://paulyuan.ca"
