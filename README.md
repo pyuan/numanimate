@@ -21,14 +21,14 @@ The following would perform a tween from 0 to 100 over 1 second and display the 
 
 ## Options
 * **"from"** - value to start from, default is 0. Can be an integer or a floating value. If not set, the text currently displaying in the DOM element will be used.
-* **"to"** - value to animate to, default is 100. Can be an integer or a floating value.
+* **"to"** - value to animate to, default is 0. Can be an integer or a floating value.
 * **"time"** - duration time for the animation, default is 1000 (ms).
 * **"easing"** - easing for the animation, default is "swing". Other easing options can be used with the jQueryUI plugin.
 * **"decimals"** - number of decimals for the precision of the numeric value, if not set, the number of decimals in the "to" value will be used. 
-* **"isCurrency"** - boolean to indicate whether to format the value as a currency by prepending the "$" symbol and adding thousands comma separators. If not set, the "to" value would be used to set this flag.
+* **"isCurrency"** - boolean to indicate whether to format the value as a currency by prepending the "$" symbol, setting default decimals to 2 places if not specified and adding thousands comma separators. If not set, the "to" value would be used to set this flag.
 * **"format"** - optional function to apply any custom formatting to the animating value. The function will receive a number and will need to return a formatted number or string.
-* **"step"** - optional function that is run on every step of the animation. The function will receive a formatted value. Not required to return anything.
-* **"complete"** - optional function to that is run when the animation finishes. The function will receive a formatted value. Not required to return anything.
+* **"step"** - optional function that is run on every step of the animation. The function will receive a formatted string. Not required to return anything, but if something is returned, it would be displayed in the specified DOM element.
+* **"complete"** - optional function to that is run when the animation finishes. The function will receive a formatted value. Not required to return anything, but if something is returned, it would be displayed in the specified DOM element.
 
 
 ## FAQ

@@ -11,7 +11,7 @@
 <script type="text/javascript" src="jquery-ui-1.10.2.custom.min.js"></script>
 
 <!-- jQuery numanimate plugin -->
-<script type="text/javascript" src="jquery.numanimate.1.0.0.min.js"></script>
+<script type="text/javascript" src="../jquery.numanimate.1.1.0/jquery.numanimate.1.1.0.min.js"></script>
 
 <script type="text/javascript">
 
@@ -38,12 +38,13 @@
 		
 		$("#element4").numanimate({to: "$150.32"});
 		
+		//notice how the the format function overrides the decimals option
 		var formatter = function(value) {
 			return Math.round(value);
 		};
-		$("#element5").numanimate({from: 0, to: 300, format: formatter});
+		$("#element5").numanimate({from: 0, to: 300, decimals: 3, format: formatter});
 		
-		$("#element6").numanimate();
+		$("#element6").numanimate({to: 200, complete: function(value){return "NumAnimate";}});
 	}
 
 </script>	
